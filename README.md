@@ -1,8 +1,8 @@
-# Freshness-Aware IoT–Edge–Cloud LLM Orchestration
+# Computing Continuum Orchestration for Freshness-Sensitive LLM Inference
 
 This repository contains the implementation of the **freshness-aware orchestration framework** presented in our paper on LLM-assisted inference over the IoT–edge–cloud computing continuum.
 
-The framework dynamically selects between **edge and cloud LLM inference** for transmitted IoT requests. It jointly considers response quality, Age of Processing (AoP), freshness deadlines, communication load, task importance, and edge–cloud path conditions. A lightweight IoT pre-transmission gate further suppresses low-value updates before they enter the computing continuum.
+The framework dynamically selects between **edge and cloud LLM inference** for transmitted IoT requests. It jointly considers response quality, Age of Processing (AoP), freshness deadlines, communication load, task importance, and edge–cloud path conditions. A lightweight IoT pre-transmission gate further suppresses low-value updates before they are transmitted to the edge or cloud.
 
 ---
 
@@ -172,8 +172,8 @@ Network conditions are evaluated under multiple edge–cloud stress levels, incl
 ### 1. Clone the repository
 
 ```bash
-git clone <REPOSITORY-URL>
-cd <REPOSITORY-NAME>
+git clone <[REPOSITORY-URL](https://github.com/iiha7/Computing-continuum-orchestration-for-freshness-sensitive-LLM-inference)>
+cd <Computing-continuum-orchestration-for-freshness-sensitive-LLM-inference>
 ```
 
 ### 2. Create the environment
@@ -206,43 +206,18 @@ pip install -r requirements.txt
 
 Experiment parameters, model configurations, network conditions, and training settings are specified in the configuration files.
 
-Before running the experiments, verify:
 
-* Edge LLM configuration
-* Cloud LLM configuration
-* Dataset/request configuration
-* Network traces
-* Freshness deadlines
-* Cloud-budget settings
-* Random seeds
-
-### 5. Run training
+### 5. Run the evaluation pipeline
 
 ```bash
-python <training_script>.py
+bash run_full_pipeline.sh
 ```
 
-### 6. Run evaluation
-
-```bash
-python <evaluation_script>.py
-```
-
-The evaluation produces per-request and aggregated results for the EdgeOnly, CloudOnly, and proposed configurations.
+The evaluation produces per-request and aggregated results for the EdgeOnly, CloudOnly, and other proposed configurations.
 
 ---
 
 ## Results Analysis
-
-The repository also includes scripts for aggregating experimental results and generating the main figures and tables used in the paper.
-
-For example:
-
-```bash
-python analyze_final_results.py \
-    --input <results-file> \
-    --outdir paper_results
-```
 
 The analysis produces:
 
@@ -274,32 +249,18 @@ The final repository is organized approximately as follows:
 ├── README.md
 ├── requirements.txt
 │
-├── src/
-│   ├── ...
-│
 ├── configs/
-│   ├── ...
-│
-├── models/
 │   ├── ...
 │
 ├── data/
 │   ├── ...
 │
-├── experiments/
+├── src/
 │   ├── ...
 │
-├── results/
-│   ├── ...
-│
-├── scripts/
-│   ├── ...
-│
-└── figures/
+└── tools/
     ├── ...
 ```
-
-The exact structure may depend on the final code release.
 
 ---
 
@@ -314,9 +275,6 @@ All reported experiments should be run using the same:
 * Training hyperparameters
 * Evaluation settings
 * Random seeds
-
-For the final experimental evaluation, multiple random seeds are used to reduce dependence on a single training run.
-
 ---
 
 ## Citation
@@ -325,8 +283,8 @@ If you use this framework or code in your research, please cite the associated p
 
 ```bibtex
 @inproceedings{<citation-key>,
-  title     = {<Paper Title>},
-  author    = {<Authors>},
+  title     = {Computing Continuum Orchestration for Freshness-Sensitive LLM Inference},
+  author    = {Abu Ali, Hamzeh and Kizilkaya, Burak and Pezaros, Dimitrios},
   booktitle = {IEEE International Conference on Cloud Networking (CLOUDNET)},
   year      = {2026}
 }
