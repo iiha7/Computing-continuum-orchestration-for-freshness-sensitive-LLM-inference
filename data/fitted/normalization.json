@@ -1,0 +1,15 @@
+{
+  "mode": "empirical_train_quantile",
+  "quantile": 0.95,
+  "n_sampled_contexts": 200000,
+  "max_bits_per_request": 27688.0,
+  "max_energy_j": 0.5630712894513435,
+  "max_cost": 0.00016155,
+  "max_aoi_s": 3.175033365115675,
+  "max_prompt_bytes": 3176.0,
+  "max_response_bytes": 286.0,
+  "max_rtt_ms": 56.71604351951281,
+  "max_access_delay_s": 2.9686142306238192,
+  "cloud_latency_scale": 0.3,
+  "notes": "Empirical 95th-percentile normalizers from training split, LLM profiles, LoED, and cloud-delay trace. Cloud processing latency uses the configured simulation.cloud_llm.latency_scale."
+}

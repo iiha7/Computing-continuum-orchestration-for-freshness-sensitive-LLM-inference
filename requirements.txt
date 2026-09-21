@@ -1,0 +1,12 @@
+numpy>=1.24
+pandas>=2.0
+scikit-learn>=1.2
+joblib>=1.2
+PyYAML>=6.0
+torch>=2.0
+matplotlib>=3.7
+tqdm>=4.65
+
+requests>=2.31
+openai>=1.0
+openpyxl>=3.1

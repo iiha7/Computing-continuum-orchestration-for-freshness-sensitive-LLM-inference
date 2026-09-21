@@ -1,0 +1,6 @@
+{
+  "max_prompt_bytes": 3181,
+  "max_response_bytes": 983,
+  "max_latency_s": 12.366731681391267,
+  "max_cost_usd": 0.0002661
+}

@@ -1,0 +1,38 @@
+{
+  "sampling_period_s": 10.0,
+  "alpha_max": 1.0,
+  "alpha_min_default": 0.05707645034778682,
+  "calibration_quantile": 0.95,
+  "calibration_margin": 1.2,
+  "edge_aoi_mean_s": 0.4384383441624318,
+  "edge_aoi_quantile_s": 0.47563708623155687,
+  "expected_access_delay_s": 0.37508454302103245,
+  "utility_at_deadline": 0.5,
+  "deadline_by_class_s": {
+    "0": 10.0,
+    "1": 5.640159571160261,
+    "2": 3.1811399988150706,
+    "3": 1.7942137211517566,
+    "4": 1.0119651692061147,
+    "5": 0.5707645034778682
+  },
+  "task_deadline_multipliers": {
+    "simple": 1.0,
+    "medium": 1.25,
+    "complex": 1.5
+  },
+  "tau_by_class_s": {
+    "0": 14.426950408889635,
+    "1": 8.137030243135332,
+    "2": 4.589414900664026,
+    "3": 2.588503237800573,
+    "4": 1.4599571311660224,
+    "5": 0.823439118682972
+  },
+  "sensitivity_multipliers": [
+    0.5,
+    1.0,
+    1.5,
+    2.0
+  ]
+}

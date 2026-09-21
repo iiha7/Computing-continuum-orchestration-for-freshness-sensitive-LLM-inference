@@ -1,0 +1,8 @@
+{
+  "method": "logistic_reliability_model",
+  "num_training_rows": 939,
+  "train_acceptable_rate_observed": 0.5591054313099042,
+  "train_mean_response_quality": 0.5591054313099042,
+  "mean_calibrated_edge_confidence": 0.5681540956926675,
+  "note": "The confidence field in edge_outputs.jsonl is calibrated reliability, not LLM self-confidence."
+}

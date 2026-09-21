@@ -1,0 +1,18 @@
+{
+  "definition": "eta_lat=(cloud_one_way_delay_seconds)/D",
+  "eta_latency_quantile_thresholds": [
+    0.0029084273073248417,
+    0.004600507657329827,
+    0.007124737981125718,
+    0.0127110259534219
+  ],
+  "quantiles": [
+    0.25,
+    0.5,
+    0.75,
+    0.95
+  ],
+  "n_pairs": 200000,
+  "eta_latency_mean": 0.00554503816469152,
+  "eta_latency_p95": 0.0127110259534219
+}

@@ -1,0 +1,38 @@
+{
+  "cloud/complex": {
+    "mean_latency_s": 2.493438789659811,
+    "p90_latency_s": 4.687878905752906,
+    "mean_response_bytes": 255.83166666666668,
+    "p90_response_bytes": 414.0
+  },
+  "cloud/medium": {
+    "mean_latency_s": 1.2936653912450815,
+    "p90_latency_s": 1.8701884880803652,
+    "mean_response_bytes": 126.19833333333334,
+    "p90_response_bytes": 178.30000000000007
+  },
+  "cloud/simple": {
+    "mean_latency_s": 0.8170398652955841,
+    "p90_latency_s": 1.0280864536618775,
+    "mean_response_bytes": 96.585,
+    "p90_response_bytes": 119.0
+  },
+  "edge/complex": {
+    "mean_latency_s": 0.08968538631561564,
+    "p90_latency_s": 0.10280079934545458,
+    "mean_response_bytes": 20.721666666666668,
+    "p90_response_bytes": 33.10000000000002
+  },
+  "edge/medium": {
+    "mean_latency_s": 0.06024331608469007,
+    "p90_latency_s": 0.06999275257739751,
+    "mean_response_bytes": 19.501666666666665,
+    "p90_response_bytes": 28.0
+  },
+  "edge/simple": {
+    "mean_latency_s": 0.04013270102389241,
+    "p90_latency_s": 0.04678610647681434,
+    "mean_response_bytes": 18.761666666666667,
+    "p90_response_bytes": 24.0
+  }
+}
